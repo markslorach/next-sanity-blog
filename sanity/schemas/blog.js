@@ -27,7 +27,7 @@ export default {
       title: "Small Description",
     },
     {
-      name: "Content",
+      name: "content",
       type: "array",
       title: "Blog Post Content",
       of: [

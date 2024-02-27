@@ -15,12 +15,12 @@ async function getData() {
   }`;
 
   const data = await client.fetch(query);
-  return data;
+  return data.slice(0, 3);
 }
 
 export default async function Home() {
   const data = await getData();
-  console.log(data);
+  // console.log(data);
 
   return (
     <main>
@@ -40,7 +40,7 @@ export default async function Home() {
                 {data.smallDescription}
               </p>
               <Button asChild className="w-full mt-7">
-                <Link href={`${data.currentSlug}`}>Read More</Link>
+                <Link href={`/blog/${data.currentSlug}`}>Read More</Link>
               </Button>
             </CardContent>
           </Card>
