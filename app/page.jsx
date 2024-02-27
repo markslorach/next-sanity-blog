@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <h1>Mark Slorach Blog.</h1>
+      <h1>Hello from the index page</h1>
     </main>
   );
 }
