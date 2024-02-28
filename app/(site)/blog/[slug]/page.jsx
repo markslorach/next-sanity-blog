@@ -41,7 +41,7 @@ const BlogArticle = async ({ params }) => {
         priority
         className="rounded-lg mt-8 border"
       />
-      <div className="mt-16 prose prose-blue prose-base dark:prose-invert mb-12 prose-li:marker:text-primary">
+      <div className="mt-12 prose prose-blue prose-base dark:prose-invert mb-12 prose-li:marker:text-primary">
         <PortableText value={data.content} />
       </div>
     </div>
